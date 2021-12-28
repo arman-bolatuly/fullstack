@@ -1,0 +1,14 @@
+### post coal
+POST http://localhost:3001/api/coal
+
+### find all coals
+GET http://localhost:3001/api/feed
+
+### find by authorId
+GET http://localhost:3001/api/coal/3
+
+### find by user id
+GET http://localhost:3001/api/user/3
+
+### find all users
+GET http://localhost:3001/api/users

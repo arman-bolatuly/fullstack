@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  name String 
+  surname String 
+  email     String  @unique
+  password  String
+  ts String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  role      String
+  coals Coal[]
+}
+
+model Coal {
+  id Int @id @default(autoincrement())
+  published Boolean? @default(false)
+  mestorojdenie String
+  name_of_coal String
+  ospp Int @default(999999)
+  prihod Int @default(999999)
+  rashod Int @default(999999)
+  ostatok Int @default(999999)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  author User? @relation(fields: [authorId], references: [id])
+  authorId Int?
+}
