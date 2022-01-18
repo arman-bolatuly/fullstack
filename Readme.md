@@ -26,8 +26,12 @@ Backend:
    }
 
 6. {
-
-}   
+   npm install bcryptjs jsonwebtoken cookie-parser
+   //to terminal
+   node
+   require('crypto').randomBytes(64).toString('hex')
+   and copy result
+   }
 
 Frontend:
 
@@ -40,6 +44,7 @@ Frontend:
 
 2. {
    npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4 /-/ setup chakra-ui
+   npm i @chakra-ui/icon
    }
 
 3. {

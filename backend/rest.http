@@ -5,10 +5,10 @@ POST http://localhost:3001/api/coal
 GET http://localhost:3001/api/feed
 
 ### find by authorId
-GET http://localhost:3001/api/coal/3
+GET http://localhost:3001/api/coal/4
 
 ### find by user id
-GET http://localhost:3001/api/user/3
+GET http://localhost:3001/api/user/4
 
 ### find all users
 GET http://localhost:3001/api/users
