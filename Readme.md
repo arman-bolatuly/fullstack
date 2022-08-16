@@ -14,7 +14,7 @@ Backend:
 3. {
    npx prisma studio /-/ start prisma-client server or start db server on PORT 5555
    npx prisma migrate dev /-/ migrate prisma-db
-   npx prisma genetare /-/ generated prisma-db
+   npx prisma generate /-/ generated prisma-db
    }
 
 4. {
